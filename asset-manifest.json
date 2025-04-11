@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/plynnova/static/css/main.3d2122e1.css",
-    "main.js": "/plynnova/static/js/main.3c3c980e.js",
+    "main.css": "/plynnova/static/css/main.64c2d0e2.css",
+    "main.js": "/plynnova/static/js/main.fb578034.js",
     "static/js/453.1300556d.chunk.js": "/plynnova/static/js/453.1300556d.chunk.js",
     "static/media/cta-bg.jpg": "/plynnova/static/media/cta-bg.4c729f5f7339acedce75.jpg",
     "static/media/hero-bg.jpg": "/plynnova/static/media/hero-bg.7f4beab56734b79588e7.jpg",
@@ -13,12 +13,12 @@
     "static/media/portfolio2.jpg": "/plynnova/static/media/portfolio2.e895f8e1b97a3f368e4b.jpg",
     "static/media/portfolio1.jpg": "/plynnova/static/media/portfolio1.3b5e29839fb27406736a.jpg",
     "index.html": "/plynnova/index.html",
-    "main.3d2122e1.css.map": "/plynnova/static/css/main.3d2122e1.css.map",
-    "main.3c3c980e.js.map": "/plynnova/static/js/main.3c3c980e.js.map",
+    "main.64c2d0e2.css.map": "/plynnova/static/css/main.64c2d0e2.css.map",
+    "main.fb578034.js.map": "/plynnova/static/js/main.fb578034.js.map",
     "453.1300556d.chunk.js.map": "/plynnova/static/js/453.1300556d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d2122e1.css",
-    "static/js/main.3c3c980e.js"
+    "static/css/main.64c2d0e2.css",
+    "static/js/main.fb578034.js"
   ]
 }
