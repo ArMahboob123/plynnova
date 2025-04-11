@@ -36,14 +36,14 @@ function Header() {
 
           <nav className={`main-nav ${isNavOpen ? 'nav-open' : ''}`}>
             <ul className="nav-links">
-              <li><Link to="/" onClick={() => setIsNavOpen(false)}>Home</Link></li>
-              <li><Link to="/services" onClick={() => setIsNavOpen(false)}>Services</Link></li>
-              <li><Link to="/portfolio" onClick={() => setIsNavOpen(false)}>Portfolio</Link></li>
+              <li><Link to="/" onClick={toggleNav}>Home</Link></li>
+              <li><Link to="/services" onClick={toggleNav}>Services</Link></li>
+              <li><Link to="/portfolio" onClick={toggleNav}>Portfolio</Link></li>
             </ul>
           </nav>
 
-          <button
-            className={`hamburger ${isNavOpen ? 'open' : ''}`}
+          <button 
+            className={`hamburger ${isNavOpen ? 'open' : ''}`} 
             onClick={toggleNav}
             aria-label="Menu"
           >
