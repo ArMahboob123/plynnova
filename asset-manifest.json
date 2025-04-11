@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/plynnova/static/css/main.0ef9c414.css",
-    "main.js": "/plynnova/static/js/main.07a4fc76.js",
+    "main.js": "/plynnova/static/js/main.a20dd94f.js",
     "static/js/453.1300556d.chunk.js": "/plynnova/static/js/453.1300556d.chunk.js",
     "static/media/cta-bg.jpg": "/plynnova/static/media/cta-bg.4c729f5f7339acedce75.jpg",
     "static/media/hero-bg.jpg": "/plynnova/static/media/hero-bg.7f4beab56734b79588e7.jpg",
@@ -14,11 +14,11 @@
     "static/media/portfolio1.jpg": "/plynnova/static/media/portfolio1.3b5e29839fb27406736a.jpg",
     "index.html": "/plynnova/index.html",
     "main.0ef9c414.css.map": "/plynnova/static/css/main.0ef9c414.css.map",
-    "main.07a4fc76.js.map": "/plynnova/static/js/main.07a4fc76.js.map",
+    "main.a20dd94f.js.map": "/plynnova/static/js/main.a20dd94f.js.map",
     "453.1300556d.chunk.js.map": "/plynnova/static/js/453.1300556d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ef9c414.css",
-    "static/js/main.07a4fc76.js"
+    "static/js/main.a20dd94f.js"
   ]
 }
