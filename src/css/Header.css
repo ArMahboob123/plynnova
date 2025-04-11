@@ -1,6 +1,7 @@
 :root {
   --header-height: 80px;
   --scroll-height: 60px;
+  --header-height-dynamic: var(--header-height);
   --primary: #4A5859;
   --wood: #69461F;
   --light-wood: #B89B72;
@@ -9,6 +10,7 @@
   --dark: #1E1E1E;
 }
 
+/* ===== HEADER ===== */
 header {
   position: fixed;
   top: 0;
@@ -28,22 +30,22 @@ header.scrolled {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== CONTAINER ===== */
 .header-container {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0 2rem;
 }
 
+/* ===== LOGO ===== */
 .logo-container {
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-decoration: none;
-  color: var(--wood);
 }
 
 .logo-link {
@@ -55,8 +57,6 @@ header.scrolled {
 
 .logo-image {
   height: 50px;
-  width: auto;
-  display: block;
   transition: height 0.3s ease;
 }
 
@@ -71,9 +71,10 @@ header.scrolled .logo-image {
 
 .company-name {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--wood);
 }
 
 .company-tagline {
@@ -81,18 +82,19 @@ header.scrolled .logo-image {
   color: var(--sage);
 }
 
+/* ===== NAVIGATION ===== */
 nav {
   display: flex;
   align-items: center;
 }
 
-nav ul {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
-nav ul li a {
+.nav-links li a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -102,180 +104,122 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-nav ul li a::after {
+.nav-links li a::after {
   content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 0%;
   height: 2px;
-  background-color: var(--wood);
+  width: 0%;
+  background: var(--wood);
   transition: width 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
   color: var(--wood);
 }
 
-nav ul li a:hover::after {
+.nav-links li a:hover::after {
   width: 100%;
 }
 
-header.scrolled nav ul li a {
+header.scrolled .nav-links li a {
   color: var(--wood);
 }
 
-header.scrolled nav ul li a:hover {
+header.scrolled .nav-links li a:hover {
   color: var(--primary);
 }
 
-header.scrolled nav ul li a::after {
+header.scrolled .nav-links li a::after {
   background-color: var(--primary);
 }
 
-.contact-btn a {
-  background-color: var(--light-wood);
-  color: var(--dark);
-  padding: 0.5rem 1.8rem;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.contact-btn a:hover {
-  background-color: var(--wood);
-  color: white;
-  transform: translateY(-2px);
-}
-
+/* ===== HAMBURGER ===== */
 .hamburger {
   display: none;
   flex-direction: column;
-  cursor: pointer;
+  justify-content: space-between;
   width: 25px;
   height: 20px;
-  justify-content: space-between;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
 }
 
 .hamburger span {
+  display: block;
   height: 3px;
   background: var(--wood);
-  border-radius: 5px;
+  border-radius: 3px;
   transition: 0.3s ease;
 }
 
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== MOBILE NAV ===== */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
     position: absolute;
+    top: 1.5rem;
     right: 1.5rem;
-  }
-
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  .header-container {
-    justify-content: center;
-  }
-
-  .logo-text {
-    display: none;
   }
 
   nav {
     position: fixed;
-    top: var(--header-height);
+    top: var(--header-height-dynamic);
     right: -100%;
-    background: white;
-    height: calc(100vh - var(--header-height));
     width: 250px;
+    height: calc(100vh - var(--header-height-dynamic));
+    background: #fff;
     flex-direction: column;
-    justify-content: flex-start;
     padding: 2rem;
-    gap: 2rem;
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1001;
-  }
-
-  header.scrolled + nav {
-    top: var(--scroll-height);
-    height: calc(100vh - var(--scroll-height));
+    z-index: 1000;
   }
 
   nav.nav-open {
     right: 0;
   }
 
-  nav ul {
+  .nav-links {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .contact-btn {
-    width: 100%;
-    text-align: center;
+  .logo-text {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
+/* ===== TEXT / ELEMENT RESPONSIVENESS ===== */
 @media (max-width: 480px) {
-  header nav ul li a {
-    font-size: 16px;
+  .nav-links li a {
+    font-size: 1rem;
   }
 
-  footer {
-    font-size: 14px;
+  .company-name {
+    font-size: 1.3rem;
   }
 
-  .cta-button,
-  .hero-cta,
-  .service-btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
+  .company-tagline {
+    font-size: 0.75rem;
   }
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1000;
 }
