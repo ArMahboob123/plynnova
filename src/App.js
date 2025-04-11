@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/plynnova">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
