@@ -58,9 +58,6 @@ function Home() {
           <div className="hero-content">
             <h1>Welcome to Plynnova</h1>
             <p>Your trusted partner for all carpentry needs.</p>
-            <button className="hero-cta" onClick={() => navigate("/contact")}>
-              Get Free Quote <i className="fas fa-arrow-right"></i>
-            </button>
           </div>
         </div>
       </section>

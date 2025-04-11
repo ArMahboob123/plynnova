@@ -38,9 +38,6 @@ function Header() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/portfolio">Portfolio</Link></li>
-            <li className="contact-btn">
-              <Link to="/contact">Get Quote</Link>
-            </li>
           </ul>
         </nav>
 
