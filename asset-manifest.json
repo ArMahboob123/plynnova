@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/plynnova/static/css/main.0ef9c414.css",
-    "main.js": "/plynnova/static/js/main.6a339152.js",
-    "static/js/453.ccf5c279.chunk.js": "/plynnova/static/js/453.ccf5c279.chunk.js",
-    "static/media/cta-bg.jpg": "/plynnova/static/media/cta-bg.4c729f5f7339acedce75.jpg",
-    "static/media/hero-bg.jpg": "/plynnova/static/media/hero-bg.7f4beab56734b79588e7.jpg",
-    "static/media/logo.png": "/plynnova/static/media/logo.042a3ae40a913c1ac7d3.png",
-    "static/media/outdoor.jpg": "/plynnova/static/media/outdoor.b46d7436774b05781105.jpg",
-    "static/media/commercial.jpg": "/plynnova/static/media/commercial.c4349fb036612577bb6e.jpg",
-    "static/media/portfolio3.jpg": "/plynnova/static/media/portfolio3.5f9cc922379807b7f33d.jpg",
-    "static/media/bathroom.jpg": "/plynnova/static/media/bathroom.3574254589d7cbf7b8b3.jpg",
-    "static/media/portfolio2.jpg": "/plynnova/static/media/portfolio2.e895f8e1b97a3f368e4b.jpg",
-    "static/media/portfolio1.jpg": "/plynnova/static/media/portfolio1.3b5e29839fb27406736a.jpg",
-    "index.html": "/plynnova/index.html",
-    "main.0ef9c414.css.map": "/plynnova/static/css/main.0ef9c414.css.map",
-    "main.6a339152.js.map": "/plynnova/static/js/main.6a339152.js.map",
-    "453.ccf5c279.chunk.js.map": "/plynnova/static/js/453.ccf5c279.chunk.js.map"
+    "main.css": "/plynnova/src/index.html/static/css/main.04600040.css",
+    "main.js": "/plynnova/src/index.html/static/js/main.dd69c37e.js",
+    "static/js/453.1300556d.chunk.js": "/plynnova/src/index.html/static/js/453.1300556d.chunk.js",
+    "static/media/cta-bg.jpg": "/plynnova/src/index.html/static/media/cta-bg.4c729f5f7339acedce75.jpg",
+    "static/media/hero-bg.jpg": "/plynnova/src/index.html/static/media/hero-bg.7f4beab56734b79588e7.jpg",
+    "static/media/logo.png": "/plynnova/src/index.html/static/media/logo.042a3ae40a913c1ac7d3.png",
+    "static/media/outdoor.jpg": "/plynnova/src/index.html/static/media/outdoor.b46d7436774b05781105.jpg",
+    "static/media/commercial.jpg": "/plynnova/src/index.html/static/media/commercial.c4349fb036612577bb6e.jpg",
+    "static/media/portfolio3.jpg": "/plynnova/src/index.html/static/media/portfolio3.5f9cc922379807b7f33d.jpg",
+    "static/media/bathroom.jpg": "/plynnova/src/index.html/static/media/bathroom.3574254589d7cbf7b8b3.jpg",
+    "static/media/portfolio2.jpg": "/plynnova/src/index.html/static/media/portfolio2.e895f8e1b97a3f368e4b.jpg",
+    "static/media/portfolio1.jpg": "/plynnova/src/index.html/static/media/portfolio1.3b5e29839fb27406736a.jpg",
+    "index.html": "/plynnova/src/index.html/index.html",
+    "main.04600040.css.map": "/plynnova/src/index.html/static/css/main.04600040.css.map",
+    "main.dd69c37e.js.map": "/plynnova/src/index.html/static/js/main.dd69c37e.js.map",
+    "453.1300556d.chunk.js.map": "/plynnova/src/index.html/static/js/453.1300556d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ef9c414.css",
-    "static/js/main.6a339152.js"
+    "static/css/main.04600040.css",
+    "static/js/main.dd69c37e.js"
   ]
 }
